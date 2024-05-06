@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title> Authentification</title>
+  </head>
+  <body>
+
+      <table width="20%" bgcolor="0099CC" align="center">
+
+      <tr>
+      <td colspan=2><center><font size=4><b>HTML Login Page</b></font></center></td>
+      </tr>
+
+      <tr>
+      <td>Username:</td>
+      <td><input type="text" size=25 name="userid"></td>
+      </tr>
+
+      <tr>
+      <td>Password:</td>
+      <td><input type="Password" size=25 name="pwd"></td>
+      </tr>
+
+      <tr>
+      <td ><input type="Reset"></td>
+      <td><input type="submit" onclick="return check(this.form)" value="Login"></td>
+      </tr>
+
+      </table>
+      </form>
+      <script language="javascript">
+      function check(form)
+      {
+
+      if(form.userid.value == "Roseindia" && form.pwd.value == "Roseindia")
+      {
+        return true;
+      }
+      else
+      {
+        alert("Error Password or Username")
+        return false;
+      }
+      }
+      </script>
+<div class="row">
+  <button type="button" class="btn btn-link"(click)="goToespaceadminprincipale()"> Go to espace-admin-principale </button>
+</div>
+<div class="row">
+  <button type="button" class="btn btn-link"(click)="ajouterouvrage()">  Ajouter Ouvrage </button>
+</div>
+<div class="row">
+  <button type="button" class="btn btn-link"(click)="ajouteretudiant()">  Ajouter Etudiant </button>
+</div>
+<!-- <div class="row">
+  <button type="button" class="btn btn-link"(click)="consulterouvrage()">  consulter-ouvrage </button>
+</div> -->
+<div class="row">
+  <button type="button" class="btn btn-link"(click)="archiverouvrage()">  Archiver ouvrage </button>
+</div>
+<div class="row">
+  <button type="button" class="btn btn-link"(click)="Consulteretudiant()">  Consulter liste etudiant </button>
+</div>
+<div class="row">
+  <button type="button" class="btn btn-link"(click)="supprimereEtudiant()">  supprimer-etudiant </button>
+</div>
+	<!-- Bibliothèque JavaScript jquery -->
+  <div class="row">
+    <button type="button" class="btn btn-link"(click)="ajouterenseignant()">  Ajouter enseignant</button>
+  </div>
+  <div class = "row d-flex justify-content-center">
+    <button type="button" class="btn btn-link" (click)="  ModifierOuvrage()"> Modifier Ouvrage</button>
+  </div>
+  <div class="row">
+    <button type="button" class="btn btn-link"(click)="consulterenseignant()"> consulter la liste des enseignants</button>
+  </div>
+  <div class="row">
+    <button type="button"  class="btn btn-link"(click)="supprimerenseignant()">  supprimer enseignant</button>
+  </div>
+</body>
+</html>
